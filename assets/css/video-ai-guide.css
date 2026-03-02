@@ -1,0 +1,345 @@
+﻿:root {
+  --bg: #07101a;
+  --surface: rgba(13, 23, 37, 0.82);
+  --surface-2: rgba(8, 15, 26, 0.86);
+  --text: #edf6ff;
+  --muted: #9fb0c6;
+  --line: rgba(255, 255, 255, 0.16);
+  --accent: #2ce3b4;
+  --accent-2: #ffc36f;
+  --accent-3: #5ac8ff;
+  --shadow: 0 24px 62px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Sora", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(920px 460px at 8% -2%, rgba(90, 200, 255, 0.17), transparent 60%),
+    radial-gradient(760px 420px at 96% 8%, rgba(255, 195, 111, 0.19), transparent 62%),
+    linear-gradient(150deg, #02060c 0%, var(--bg) 45%, #0a1522 100%);
+  overflow-x: hidden;
+}
+
+a {
+  color: #b5efff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e8fbff;
+}
+
+.topbar,
+.container {
+  width: min(1100px, calc(100% - 34px));
+  margin-inline: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 18px 0;
+}
+
+.brand {
+  font-family: "Chakra Petch", "Segoe UI", sans-serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f2fbff;
+}
+
+.top-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 13px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.03);
+  color: #dff6ff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition: transform 0.22s ease, border-color 0.22s ease;
+}
+
+.chip-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(90, 200, 255, 0.8);
+}
+
+.chip-primary {
+  border: none;
+  color: #0c1114;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+}
+
+.container {
+  padding-bottom: 40px;
+}
+
+.hero,
+.step-block {
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: linear-gradient(138deg, var(--surface), var(--surface-2));
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.hero {
+  margin-top: 16px;
+}
+
+.step-block {
+  margin-top: 16px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent-3);
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+h1,
+h2,
+h3,
+p,
+pre,
+ul {
+  margin-top: 0;
+}
+
+h1 {
+  font-family: "Chakra Petch", "Segoe UI", sans-serif;
+  margin: 12px 0 10px;
+  font-size: clamp(2rem, 4.6vw, 3.7rem);
+  line-height: 1.02;
+}
+
+h2 {
+  font-family: "Chakra Petch", "Segoe UI", sans-serif;
+  margin-bottom: 12px;
+  font-size: clamp(1.35rem, 2.9vw, 2rem);
+}
+
+.hero p,
+.step-block p,
+li {
+  color: var(--muted);
+  line-height: 1.72;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.prompt-card {
+  margin-top: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  background: rgba(5, 11, 20, 0.74);
+  padding: 14px;
+}
+
+.prompt-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.prompt-head h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.copy-btn {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ddf7ff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.copy-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(90, 200, 255, 0.86);
+}
+
+.copy-btn.copied {
+  border-color: rgba(44, 227, 180, 0.92);
+  color: #b8ffe9;
+}
+
+.prompt-text {
+  margin: 0;
+  white-space: pre-wrap;
+  border-radius: 12px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.34);
+  padding: 12px;
+  color: #ebf6ff;
+  line-height: 1.65;
+  font-size: 0.92rem;
+}
+
+.note {
+  margin-top: 12px;
+  margin-bottom: 0;
+  color: #ffdca6;
+}
+
+.detail-line {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.media-card {
+  margin: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.media-card img,
+.media-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #02060d;
+}
+
+.media-card figcaption {
+  padding: 11px 13px;
+  font-size: 0.92rem;
+}
+
+.final-note p {
+  margin-bottom: 0;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translate(-50%, 12px);
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(8, 15, 27, 0.93);
+  color: #ebf8ff;
+  padding: 9px 13px;
+  font-size: 0.86rem;
+  transition: transform 0.24s ease, opacity 0.24s ease;
+  z-index: 9;
+}
+
+.toast.show {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.ambient {
+  position: fixed;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  filter: blur(82px);
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ambient-a {
+  top: -120px;
+  left: -120px;
+  background: #35c7ff;
+}
+
+.ambient-b {
+  right: -120px;
+  top: 200px;
+  background: #ffc36f;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 860px) {
+  .topbar,
+  .container {
+    width: min(1100px, calc(100% - 22px));
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero,
+  .step-block {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .prompt-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
