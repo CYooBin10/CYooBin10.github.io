@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #07101a;
   --surface: rgba(13, 23, 37, 0.82);
   --surface-2: rgba(8, 15, 26, 0.86);
@@ -225,6 +225,17 @@ ul {
   margin-bottom: 0;
 }
 
+.step-media {
+  margin-top: 14px;
+}
+
+.step-media-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
 .media-card {
   margin: 0;
   border-radius: 16px;
@@ -327,6 +338,10 @@ ul {
   .prompt-head {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .step-media-grid {
+    grid-template-columns: 1fr;
   }
 }
 
