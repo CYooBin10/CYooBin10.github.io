@@ -1,123 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="최유빈 - Freelance Developer. Game scripts and affordable digital tech products."
-    />
-    <title>최유빈 | Freelance Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <div class="bg-orb orb-a"></div>
-    <div class="bg-orb orb-b"></div>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Choi Yoo Bin - Young Developer Portfolio. Passionate about technology with 3 years of coding experience.">
+  <meta name="theme-color" content="#cc0000">
+  <title>Choi Yoo Bin — Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Loading</div>
+  </div>
 
-    <header class="site-header">
-      <div class="logo-wrap">
-        <span class="logo-dot"></span>
-        <span class="logo-text">최유빈</span>
-      </div>
-      <div class="header-actions">
-        <a class="mini-btn" href="#links">Explore links</a>
-        <a class="mini-btn mini-btn-alt" href="pages/video-ai-guide.html">AI Video Guide</a>
-      </div>
-    </header>
+  <!-- Particles -->
+  <div class="particles-container"></div>
+  <div class="cursor-glow"></div>
 
-    <main>
-      <section class="hero reveal">
-        <p class="eyebrow">FREELANCE DEVELOPER</p>
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Hero: Profile image left + Info right -->
+    <section class="hero-section" id="hero">
+      <!-- Left column: profile image + song disc overlapping -->
+      <div class="profile-col">
+        <div class="profile-image-container">
+          <img src="https://github.com/CYooBin10.png" alt="Choi Yoo Bin" class="profile-image" loading="eager">
+        </div>
+        <!-- Song disc overlapping bottom-left of profile image -->
+        <div class="disc-wrapper" id="disc-wrapper">
+          <div class="disc-rings">
+            <div class="disc-ring ring-1"></div>
+            <div class="disc-ring ring-2"></div>
+          </div>
+          <div class="disc" id="disc">
+            <img src="https://i.ytimg.com/vi/kBz22YS1eeQ/hqdefault.jpg" alt="Ngày Rời Chuyến Bay" class="disc-image" id="song-cover">
+            <div class="disc-hole"></div>
+            <div class="disc-grooves"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column: info text -->
+      <div class="hero-info">
         <h1>
-          Hi, I am <span class="highlight">최유빈</span><br />
-          Building game scripts and affordable digital solutions
+          <span class="hero-greeting">Hello, I am </span>
+          <span class="hero-name">Choi Yoo Bin.</span>
         </h1>
-        <p class="hero-text">
-          I build and distribute practical products for game developers, creators, and users who need premium digital services. Fast support, clear process, and competitive pricing.
-        </p>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#links">Get Started</a>
-          <a class="btn btn-ghost" href="#about">About 최유빈</a>
+        <p class="hero-bio">I am a young developer with a strong passion for technology and 3 years of coding experience.</p>
+
+        <div class="hero-detail-label">Education</div>
+        <ul class="hero-list">
+          <li>Currently studying at a high school in Vietnam.</li>
+        </ul>
+
+        <div class="hero-detail-label">Work and Projects</div>
+        <ul class="hero-list">
+          <li>Workplace: Currently working at 2Tech.</li>
+          <li>Current Project: Developing Endstone plugins at EndGit.</li>
+        </ul>
+
+        <div class="hero-detail-label">Experience</div>
+        <ul class="hero-list">
+          <li>3 years of practical programming experience, equipped with logical thinking and technical problem-solving skills.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Music Player: song title + progress + play button, below the disc -->
+    <div class="music-player-area" id="music-player">
+      <div class="music-player-inner">
+        <div class="song-title">Ngày rời chuyến bay</div>
+        <div class="progress-row">
+          <div class="progress-bar-wrapper" id="progress-wrapper">
+            <div class="progress-bar-fill" id="progress-fill"></div>
+          </div>
+          <button class="play-btn-small" id="play-btn" title="Phát / Dừng" aria-label="Play">
+            <span id="play-icon">▶</span>
+          </button>
         </div>
+      </div>
+    </div>
 
-        <div class="stats">
-          <article>
-            <h3>24/7</h3>
-            <p>Fast support</p>
-          </article>
-          <article>
-            <h3>2+</h3>
-            <p>Trusted sales channels</p>
-          </article>
-          <article>
-            <h3>100%</h3>
-            <p>Official links</p>
-          </article>
-        </div>
-      </section>
+    <!-- Divider -->
+    <div class="section-divider"></div>
 
-      <section id="links" class="link-section">
-        <h2 class="section-title reveal">Official 최유빈 Links</h2>
+    <!-- Jobs Section -->
+    <section class="jobs-section" id="jobs">
+      <h2 class="section-heading">JOBS</h2>
 
-        <div class="card-grid">
-          <article class="link-card reveal" data-link="https://discord.gg/SolarSoloDev">
-            <div class="badge">Discord Store</div>
-            <h3>SolarSoloDev</h3>
-            <p>
-              A Discord community focused on selling game scripts, with regular updates, multiple script categories, and clear usage guidance.
-            </p>
-            <div class="action-row">
-              <a class="btn btn-primary" href="https://discord.gg/SolarSoloDev" target="_blank" rel="noopener noreferrer">
-                Open Discord
-              </a>
-              <button class="btn btn-detail copy-btn" type="button">Copy link</button>
-            </div>
-          </article>
+      <div class="job-cards">
+        <a href="#" class="job-card reveal" id="job-endgit">
+          <div class="job-card-logo">EndGit</div>
+          <div class="job-card-desc">A website that allows you to upload and share Endstone plugins.</div>
+        </a>
 
-          <article class="link-card reveal" data-link="https://store.hypertechstudio.xyz/?ref=baotran">
-            <div class="badge">Tech Store</div>
-            <h3>HyperTech Studio</h3>
-            <p>
-              A store for affordable digital products: Discord Nitro, ChatGPT Plus accounts, Gemini Pro, and many other tech services.
-            </p>
-            <div class="action-row">
-              <a
-                class="btn btn-primary"
-                href="https://store.hypertechstudio.xyz/?ref=baotran"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Open Store
-              </a>
-              <button class="btn btn-detail copy-btn" type="button">Copy link</button>
-            </div>
-          </article>
-        </div>
-      </section>
+        <a href="#" class="job-card reveal" id="job-github">
+          <div class="job-card-logo">Github</div>
+          <div class="job-card-desc">My github</div>
+        </a>
+      </div>
+    </section>
 
-      <section id="about" class="about-section reveal">
-        <h2 class="section-title">Why choose 최유빈?</h2>
-        <div class="pill-wrap">
-          <span class="pill">Flexible freelance workflow</span>
-          <span class="pill">Competitive pricing</span>
-          <span class="pill">Quick response</span>
-          <span class="pill">Frequent updates</span>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer reveal">
-      <p>Skoxz (c) 2026 | Freelance Developer</p>
-      <p>Discord + Digital tech + Great pricing</p>
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-text">
+        Made with <span class="footer-heart">♥</span> by Choi Yoo Bin
+      </p>
     </footer>
 
-    <script src="assets/js/main.js"></script>
-  </body>
+  </main>
+
+  <!-- Floating mini controls (bottom right) -->
+  <div class="hidden-controls" id="float-controls">
+    <button class="ctrl-btn" id="prev-btn" title="Tua lại 10s">⏮</button>
+    <button class="ctrl-btn play-main" id="play-btn-main" title="Phát / Dừng">
+      <span id="play-icon-main">▶</span>
+    </button>
+    <button class="ctrl-btn" id="next-btn" title="Tua tới 10s">⏭</button>
+    <div class="volume-mini-wrapper">
+      <button class="ctrl-btn" id="volume-btn" title="Âm lượng">
+        <span id="volume-icon">🔊</span>
+      </button>
+      <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="70" aria-label="Volume">
+    </div>
+    <span class="time-display" id="current-time">0:00</span>
+    <span class="time-display">/</span>
+    <span class="time-display" id="duration-time">3:58</span>
+  </div>
+
+  <!-- Hidden YouTube player for actual audio -->
+  <div id="yt-player-container" style="position:fixed;top:-9999px;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;">
+    <div id="yt-player"></div>
+  </div>
+
+  <!-- YouTube IFrame API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
 </html>
