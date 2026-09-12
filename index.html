@@ -1,145 +1,521 @@
+```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Choi Yoo Bin - Young Developer Portfolio. Passionate about technology with 3 years of coding experience.">
-  <meta name="theme-color" content="#cc0000">
-  <title>Choi Yoo Bin — Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Choi Yoo Bin — Young Developer Portfolio. Passionate about technology with 3 years of coding experience."
+  />
+
+  <meta name="theme-color" content="#080808" />
+
+  <title>Choi Yoo Bin — Developer</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>"
+  />
 </head>
+
 <body>
-  <!-- Loading Screen -->
+
+  <!-- Ambient Background -->
+  <div class="ambient ambient-red"></div>
+  <div class="ambient ambient-white"></div>
+
+  <!-- Loading -->
   <div class="loading-screen">
     <div class="loading-spinner"></div>
-    <div class="loading-text">Loading</div>
+    <div class="loading-text">INITIALIZING...</div>
   </div>
 
-  <!-- Particles -->
+  <!-- Background Effects -->
   <div class="particles-container"></div>
   <div class="cursor-glow"></div>
 
-  <!-- Main Content -->
+  <!-- Main -->
   <main class="main-content">
 
-    <!-- Hero: Profile image left + Info right -->
+    <!-- Navigation -->
+    <nav class="topbar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>CYB</span>
+      </div>
+
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        AVAILABLE FOR PROJECTS
+      </div>
+    </nav>
+
+
+    <!-- Hero -->
     <section class="hero-section" id="hero">
-      <!-- Left column: profile image + song disc overlapping -->
-      <div class="profile-col">
-        <div class="profile-image-container">
-          <img src="https://github.com/CYooBin10.png" alt="Choi Yoo Bin" class="profile-image" loading="eager">
+
+      <!-- Left -->
+      <div class="hero-visual">
+
+        <div class="visual-index">
+          <span>01</span>
+          <span>PORTFOLIO</span>
         </div>
-        <!-- Song disc overlapping bottom-left of profile image -->
+
+        <div class="profile-frame">
+
+          <div class="profile-glow"></div>
+
+          <img
+            src="https://github.com/CYooBin10.png"
+            alt="Choi Yoo Bin"
+            class="profile-image"
+            loading="eager"
+          />
+
+          <div class="profile-overlay"></div>
+
+          <div class="profile-label">
+            <span>CHOI YOO BIN</span>
+            <span>DEVELOPER</span>
+          </div>
+
+        </div>
+
+        <!-- Music Disc -->
         <div class="disc-wrapper" id="disc-wrapper">
+
           <div class="disc-rings">
             <div class="disc-ring ring-1"></div>
             <div class="disc-ring ring-2"></div>
           </div>
+
           <div class="disc" id="disc">
-            <img src="https://i.ytimg.com/vi/kBz22YS1eeQ/hqdefault.jpg" alt="Ngày Rời Chuyến Bay" class="disc-image" id="song-cover">
-            <div class="disc-hole"></div>
+
+            <img
+              src="https://i.ytimg.com/vi/kBz22YS1eeQ/hqdefault.jpg"
+              alt="Ngày Rời Chuyến Bay"
+              class="disc-image"
+              id="song-cover"
+            />
+
             <div class="disc-grooves"></div>
+
+            <div class="disc-hole">
+              <span></span>
+            </div>
+
           </div>
+
+          <div class="disc-caption">
+            <span>NOW PLAYING</span>
+            <strong>Ngày rời chuyến bay</strong>
+          </div>
+
         </div>
+
       </div>
 
-      <!-- Right column: info text -->
+
+      <!-- Right -->
       <div class="hero-info">
-        <h1>
-          <span class="hero-greeting">Hello, I am </span>
-          <span class="hero-name">Choi Yoo Bin.</span>
+
+        <div class="hero-eyebrow">
+          <span></span>
+          HELLO, I AM
+        </div>
+
+        <h1 class="hero-title">
+          Choi Yoo
+          <br />
+          <em>Bin.</em>
         </h1>
 
-        <p class="hero-bio">I am a young developer with a strong passion for technology and 3 years of coding experience.</p>
+        <p class="hero-bio">
+          I am a young developer with a strong passion for technology
+          and 3 years of coding experience.
+        </p>
 
-        <div class="hero-detail-label">Education</div>
-        <ul class="hero-list">
-          <li>Currently studying at a high school in Vietnam.</li>
-        </ul>
 
-        <div class="hero-detail-label">Work and Projects</div>
-        <ul class="hero-list">
-          <li>Workplace: Currently working at 2Tech.</li>
-          <li>Current Project: Developing Endstone plugins at EndGit.</li>
-        </ul>
+        <!-- Meta Grid -->
+        <div class="hero-meta">
 
-        <div class="hero-detail-label">Experience</div>
-        <ul class="hero-list">
-          <li>3 years of practical programming experience, equipped with logical thinking and technical problem-solving skills.</li>
-        </ul>
+          <div class="meta-item">
+            <span class="meta-number">03+</span>
+            <span class="meta-label">YEARS CODING</span>
+          </div>
+
+          <div class="meta-item">
+            <span class="meta-number">16</span>
+            <span class="meta-label">YEARS OLD</span>
+          </div>
+
+          <div class="meta-item">
+            <span class="meta-number">VN</span>
+            <span class="meta-label">BASED IN VIETNAM</span>
+          </div>
+
+        </div>
+
+
+        <!-- Information -->
+        <div class="info-grid">
+
+          <div class="info-block">
+            <div class="info-label">
+              <span>01</span>
+              EDUCATION
+            </div>
+
+            <p>
+              Currently studying at a high school in Vietnam.
+            </p>
+          </div>
+
+
+          <div class="info-block">
+            <div class="info-label">
+              <span>02</span>
+              WORK & PROJECTS
+            </div>
+
+            <p>
+              Currently working at <strong>2Tech</strong>.
+              Developing Endstone plugins at <strong>EndGit</strong>.
+            </p>
+          </div>
+
+
+          <div class="info-block">
+            <div class="info-label">
+              <span>03</span>
+              EXPERIENCE
+            </div>
+
+            <p>
+              Practical programming experience with a strong focus
+              on logical thinking and technical problem-solving.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- CTA -->
+        <div class="hero-actions">
+
+          <a href="#jobs" class="primary-btn">
+            <span>VIEW PROJECTS</span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a
+            href="https://github.com/CYooBin10"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="secondary-btn"
+          >
+            GITHUB
+          </a>
+
+        </div>
+
       </div>
+
     </section>
 
-    <!-- Music Player: song title + progress + play button, below the disc -->
-    <div class="music-player-area" id="music-player">
+
+    <!-- Music Player -->
+    <section class="music-player-area" id="music-player">
+
       <div class="music-player-inner">
-        <div class="song-title">Ngày rời chuyến bay</div>
-        <div class="progress-row">
-          <div class="progress-bar-wrapper" id="progress-wrapper">
-            <div class="progress-bar-fill" id="progress-fill"></div>
+
+        <div class="music-left">
+
+          <div class="music-status">
+            <span class="equalizer">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </span>
+
+            AUDIO SYSTEM
           </div>
-          <button class="play-btn-small" id="play-btn" title="Phát / Dừng" aria-label="Play">
+
+          <div class="song-title">
+            Ngày rời chuyến bay
+          </div>
+
+        </div>
+
+
+        <div class="music-controls">
+
+          <span class="time-display" id="current-time">
+            0:00
+          </span>
+
+          <div
+            class="progress-bar-wrapper"
+            id="progress-wrapper"
+          >
+            <div
+              class="progress-bar-fill"
+              id="progress-fill"
+            ></div>
+          </div>
+
+          <span class="time-display">
+            3:58
+          </span>
+
+          <button
+            class="play-btn-small"
+            id="play-btn"
+            title="Phát / Dừng"
+            aria-label="Play"
+          >
             <span id="play-icon">▶</span>
           </button>
+
         </div>
+
       </div>
-    </div>
+
+    </section>
+
 
     <!-- Divider -->
-    <div class="section-divider"></div>
+    <div class="section-divider">
+      <span></span>
+    </div>
 
-    <!-- Jobs Section -->
+
+    <!-- Jobs -->
     <section class="jobs-section" id="jobs">
-      <h2 class="section-heading">JOBS</h2>
+
+      <div class="section-top">
+
+        <div>
+          <div class="section-index">02 / SELECTED WORK</div>
+
+          <h2 class="section-heading">
+            JOBS<span>.</span>
+          </h2>
+        </div>
+
+        <p class="section-description">
+          A selection of projects and platforms I've worked on.
+        </p>
+
+      </div>
+
 
       <div class="job-cards">
-        <a href="#" class="job-card reveal" id="job-endgit">
-          <div class="job-card-logo">EndGit</div>
-          <div class="job-card-desc">A website that allows you to upload and share Endstone plugins.</div>
+
+        <a
+          href="#"
+          class="job-card reveal"
+          id="job-endgit"
+        >
+
+          <div class="job-card-top">
+            <span class="project-number">01</span>
+
+            <span class="project-arrow">
+              ↗
+            </span>
+          </div>
+
+          <div class="job-card-content">
+
+            <div class="job-card-logo">
+              EndGit
+            </div>
+
+            <div class="job-card-desc">
+              A website that allows you to upload
+              and share Endstone plugins.
+            </div>
+
+          </div>
+
+          <div class="job-card-footer">
+            <span>WEB PLATFORM</span>
+            <span>2026</span>
+          </div>
+
         </a>
 
-        <a href="#" class="job-card reveal" id="job-github">
-          <div class="job-card-logo">Github</div>
-          <div class="job-card-desc">My github</div>
+
+        <a
+          href="https://github.com/CYooBin10"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="job-card reveal"
+          id="job-github"
+        >
+
+          <div class="job-card-top">
+            <span class="project-number">02</span>
+
+            <span class="project-arrow">
+              ↗
+            </span>
+          </div>
+
+          <div class="job-card-content">
+
+            <div class="job-card-logo">
+              GitHub
+            </div>
+
+            <div class="job-card-desc">
+              My personal GitHub profile containing
+              projects, experiments and development work.
+            </div>
+
+          </div>
+
+          <div class="job-card-footer">
+            <span>OPEN SOURCE</span>
+            <span>GITHUB</span>
+          </div>
+
         </a>
+
       </div>
+
     </section>
+
 
     <!-- Footer -->
     <footer class="footer">
-      <p class="footer-text">
-        Made with <span class="footer-heart">♥</span> by Choi Yoo Bin
-      </p>
+
+      <div class="footer-left">
+        © 2026 CHOI YOO BIN
+      </div>
+
+      <div class="footer-center">
+        BUILT WITH <span>♥</span>
+      </div>
+
+      <div class="footer-right">
+        VIETNAM
+      </div>
+
     </footer>
 
   </main>
 
-  <!-- Floating mini controls (bottom right) -->
-  <div class="hidden-controls" id="float-controls">
-    <button class="ctrl-btn" id="prev-btn" title="Tua lại 10s">⏮</button>
-    <button class="ctrl-btn play-main" id="play-btn-main" title="Phát / Dừng">
-      <span id="play-icon-main">▶</span>
+
+  <!-- Floating Music Controls -->
+  <div
+    class="hidden-controls"
+    id="float-controls"
+  >
+
+    <button
+      class="ctrl-btn"
+      id="prev-btn"
+      title="Tua lại 10s"
+    >
+      ⏮
     </button>
-    <button class="ctrl-btn" id="next-btn" title="Tua tới 10s">⏭</button>
+
+    <button
+      class="ctrl-btn play-main"
+      id="play-btn-main"
+      title="Phát / Dừng"
+    >
+      <span id="play-icon-main">
+        ▶
+      </span>
+    </button>
+
+    <button
+      class="ctrl-btn"
+      id="next-btn"
+      title="Tua tới 10s"
+    >
+      ⏭
+    </button>
+
+
     <div class="volume-mini-wrapper">
-      <button class="ctrl-btn" id="volume-btn" title="Âm lượng">
-        <span id="volume-icon">🔊</span>
+
+      <button
+        class="ctrl-btn"
+        id="volume-btn"
+        title="Âm lượng"
+      >
+        <span id="volume-icon">
+          🔊
+        </span>
       </button>
-      <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="70" aria-label="Volume">
+
+      <input
+        type="range"
+        class="volume-slider"
+        id="volume-slider"
+        min="0"
+        max="100"
+        value="70"
+        aria-label="Volume"
+      />
+
     </div>
-    <span class="time-display" id="current-time">0:00</span>
-    <span class="time-display">/</span>
-    <span class="time-display" id="duration-time">3:58</span>
+
+
+    <span
+      class="time-display"
+      id="current-time"
+    >
+      0:00
+    </span>
+
+    <span class="time-display">
+      /
+    </span>
+
+    <span
+      class="time-display"
+      id="duration-time"
+    >
+      3:58
+    </span>
+
   </div>
 
-  <!-- Hidden YouTube player for actual audio -->
-  <div id="yt-player-container" style="position:fixed;top:-9999px;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;">
+
+  <!-- Hidden YouTube Player -->
+  <div
+    id="yt-player-container"
+    style="
+      position:fixed;
+      top:-9999px;
+      left:-9999px;
+      width:1px;
+      height:1px;
+      opacity:0;
+      pointer-events:none;
+    "
+  >
     <div id="yt-player"></div>
   </div>
 
-  <!-- YouTube IFrame API -->
+
+  <!-- YouTube API -->
   <script src="https://www.youtube.com/iframe_api"></script>
+
+  <!-- Main Script -->
   <script src="script.js"></script>
+
 </body>
 </html>
+```
