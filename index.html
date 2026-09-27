@@ -2,20 +2,21 @@
 
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta
- name="description"
- content="Choi Yoo Bin — Developer & Game Developer from Vietnam."
-/>
+name="description"
+content="Choi Yoo Bin — Developer & Game Developer from Vietnam."
 
-  <meta name="theme-color" content="#0a0a0a" />
+>
+
+  <meta name="theme-color" content="#090909">
 
   <title>Choi Yoo Bin — Developer</title>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://github.com/CYooBin10.png" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="https://github.com/CYooBin10.png">
 </head>
 
 <body>
@@ -23,15 +24,14 @@
   <div class="site-shell">
 
 ```
-<!-- Navigation -->
 <header class="navbar">
 
-  <a href="#" class="logo">
+  <a href="#" class="logo" aria-label="Choi Yoo Bin">
     <span class="logo-mark">CY</span>
     <span class="logo-name">Choi Yoo Bin</span>
   </a>
 
-  <nav class="nav-links">
+  <nav class="nav-links" aria-label="Main navigation">
     <a href="#work">Work</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
@@ -44,17 +44,18 @@
     class="nav-github"
   >
     GitHub
+
     <svg viewBox="0 0 16 16" aria-hidden="true">
-      <path d="M5 11L11 5M6 5h5v5" />
+      <path d="M5 11L11 5M6 5h5v5"></path>
     </svg>
   </a>
 
 </header>
 
 
-<!-- Hero -->
 <main>
 
+  <!-- HERO -->
   <section class="hero">
 
     <div class="hero-content">
@@ -65,7 +66,7 @@
       </div>
 
       <h1>
-        Choi Yoo<br />
+        Choi Yoo<br>
         <span>Bin.</span>
       </h1>
 
@@ -80,7 +81,7 @@
           View projects
 
           <svg viewBox="0 0 16 16" aria-hidden="true">
-            <path d="M3 13L13 3M5 3h8v8" />
+            <path d="M3 13L13 3M5 3h8v8"></path>
           </svg>
         </a>
 
@@ -93,16 +94,13 @@
     </div>
 
 
-    <!-- Profile -->
     <div class="hero-profile">
 
       <div class="profile-image-wrap">
-
         <img
           src="https://github.com/CYooBin10.png"
           alt="Choi Yoo Bin"
-        />
-
+        >
       </div>
 
       <div class="profile-info">
@@ -124,7 +122,7 @@
   </section>
 
 
-  <!-- Skills -->
+  <!-- TECH STACK -->
   <section class="stack-section">
 
     <div class="section-label">
@@ -133,20 +131,18 @@
     </div>
 
     <div class="stack-list">
-
       <span>PHP</span>
       <span>Java</span>
       <span>JavaScript</span>
       <span>Python</span>
       <span>Roblox</span>
       <span>Minecraft</span>
-
     </div>
 
   </section>
 
 
-  <!-- Work -->
+  <!-- WORK -->
   <section class="work-section" id="work">
 
     <div class="section-heading-row">
@@ -165,13 +161,8 @@
 
     <div class="projects">
 
-
-      <!-- EndGit -->
-      <a
-        href="#"
-        class="project"
-        id="project-endgit"
-      >
+      <!-- ENDGIT -->
+      <div class="project" id="project-endgit">
 
         <div class="project-number">
           01
@@ -180,13 +171,11 @@
         <div class="project-main">
 
           <div class="project-title-row">
-
             <h3>EndGit</h3>
 
-            <svg viewBox="0 0 16 16" aria-hidden="true">
-              <path d="M3 13L13 3M5 3h8v8" />
-            </svg>
-
+            <span class="project-status">
+              WEB PLATFORM
+            </span>
           </div>
 
           <p>
@@ -197,14 +186,13 @@
         </div>
 
         <div class="project-meta">
-          <span>WEB PLATFORM</span>
           <span>2026</span>
         </div>
 
-      </a>
+      </div>
 
 
-      <!-- GitHub -->
+      <!-- GITHUB -->
       <a
         href="https://github.com/CYooBin10"
         target="_blank"
@@ -223,7 +211,7 @@
             <h3>GitHub</h3>
 
             <svg viewBox="0 0 16 16" aria-hidden="true">
-              <path d="M3 13L13 3M5 3h8v8" />
+              <path d="M3 13L13 3M5 3h8v8"></path>
             </svg>
 
           </div>
@@ -243,12 +231,8 @@
       </a>
 
 
-      <!-- Game Development -->
-      <a
-        href="#"
-        class="project"
-        id="project-games"
-      >
+      <!-- GAME DEVELOPMENT -->
+      <div class="project" id="project-games">
 
         <div class="project-number">
           03
@@ -257,13 +241,11 @@
         <div class="project-main">
 
           <div class="project-title-row">
-
             <h3>Game Development</h3>
 
-            <svg viewBox="0 0 16 16" aria-hidden="true">
-              <path d="M3 13L13 3M5 3h8v8" />
-            </svg>
-
+            <span class="project-status">
+              GAME DEV
+            </span>
           </div>
 
           <p>
@@ -274,18 +256,17 @@
         </div>
 
         <div class="project-meta">
-          <span>GAME DEV</span>
           <span>ONGOING</span>
         </div>
 
-      </a>
+      </div>
 
     </div>
 
   </section>
 
 
-  <!-- About -->
+  <!-- ABOUT -->
   <section class="about-section" id="about">
 
     <div class="section-label">
@@ -296,10 +277,12 @@
     <div class="about-grid">
 
       <div class="about-title">
+
         <h2>
-          Building things<br />
+          Building things<br>
           <span>to understand them.</span>
         </h2>
+
       </div>
 
       <div class="about-content">
@@ -329,7 +312,7 @@
   </section>
 
 
-  <!-- Experience -->
+  <!-- EXPERIENCE -->
   <section class="experience-section">
 
     <div class="section-label">
@@ -399,7 +382,7 @@
   </section>
 
 
-  <!-- Contact -->
+  <!-- CONTACT -->
   <section class="contact-section" id="contact">
 
     <div class="contact-inner">
@@ -409,7 +392,7 @@
       </span>
 
       <h2>
-        Have something<br />
+        Have something<br>
         <span>to build?</span>
       </h2>
 
@@ -420,7 +403,7 @@
         tranhuybao000@gmail.com
 
         <svg viewBox="0 0 16 16" aria-hidden="true">
-          <path d="M3 13L13 3M5 3h8v8" />
+          <path d="M3 13L13 3M5 3h8v8"></path>
         </svg>
 
       </a>
@@ -432,7 +415,7 @@
 </main>
 
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer class="footer">
 
   <span>
@@ -456,7 +439,7 @@
 
   </div>
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 
 </body>
 </html>
